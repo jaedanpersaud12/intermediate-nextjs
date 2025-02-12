@@ -1,6 +1,7 @@
 'use client'
 import { Input } from '@nextui-org/react'
 import Link from 'next/link'
+import SubmitButton from './SubmitButton'
 
 const SigninForm = () => {
   return (
@@ -22,6 +23,7 @@ const SigninForm = () => {
         type="password"
         placeholder="Password"
       />
+      <SubmitButton label="Sign in" />
 
       <div>
         <Link href="/signup">{`Don't have an account?`}</Link>
