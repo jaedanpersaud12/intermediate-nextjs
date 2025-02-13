@@ -32,6 +32,7 @@ const signInUser = async (_: any, formData: FormData) => {
   })
   const { token } = await signin(data)
   cookies().set(COOKIE_NAME, token)
+  redirect('/dashboard')
 }
 
 export { registerUser, signInUser }
